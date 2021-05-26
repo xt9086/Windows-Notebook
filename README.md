@@ -1,2 +1,61 @@
-# Windows-Notebook
-Using C# winform to develop Notepad program of windows system
+
+## 基于C#窗体模仿一个简单的Windows记事本程序
+
+### 该系统包括以下功能
+
+1. 文本文件的新建、打开、保存、另存为、退出
+2. 编辑操作：撤销、剪切、复制、粘贴、删除
+3. 环境的设置：改变字体、改变前景及背景颜色
+
+### 实现的主要关键点
+
+#### OpenFileDialog 类
+
+- 属性：Filter 属性主要用于过滤文件，本软件中主要过滤 txt 文件。FileName 属性主要获取所选文件的路径。
+
+- 方法：ShowDialog 方法用于显示打开文件对话框。
+
+- 作用：显示打开文件对话框。
+
+
+#### SaveFileDialog 类
+
+- 属性：Filter 属性主要用于过滤文件。FileName 属性主要用于获取所选文件的路径。 
+- 方法：ShowDialog 方法用于显示保存文件对话框。
+- 作用：显示保存文件对话框。
+
+#### StreamReader 类
+
+- 属性：CurrentEncoding 属性用以获得当前读写器对象所使用的编码格式。 
+- 方法：ReadToEnd 方法从文件流的当前位置一直读到流的末尾。
+- 作用：以文本方式对文件流进行读操作。
+
+#### StreamWriter 类
+
+- 属性： 实现一个 System.IO.TextWriter 使其以一种特定的编码向流中写入字符 方法：WriteToEnd 
+- 方法:从文件流的当前位置一直写到流的末尾。
+- 作用：以文本方式对文件流进行写操作。
+
+#### FontDialog 类
+
+- 属性：Font属性用以表明在“字体对话框”所选的字体。
+- 方法：ShowDialog方法用于显示字体编辑对话框。
+- 作用：对文本区域的内容进行字体设置。
+
+#### ColorDialog 类
+
+- 属性：Color属性用以表明在”颜色对话框“所选的颜色。
+- 方法：ShowDialog方法用于显示颜色编辑对话框。
+- 作用：对文本区域的内容进行颜色设置。
+
+#### MenuStrip 类
+
+- 属性：在ToolStrip显示项的集合。
+- 方法：通过添加选项进行分组的设置。
+- 作用：显示按功能分组的应用程序命令和选项。
+
+#### TextBox 类
+
+- 属性：文本输入控件。
+- 方法：通过其Name名加关键字进行操作。
+- 作用：用于输入和显示文本。
