@@ -136,7 +136,7 @@ namespace Notebook
 
         private void HelpAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this,"文本编辑器"+Environment.NewLine+"15计算机1班周晓天"+Environment.NewLine+"版本1.1","文本编辑器",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+            MessageBox.Show(this,"文本编辑器"+Environment.NewLine+"曲折无已"+Environment.NewLine+"版本1.1","文本编辑器",MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
         }
 
         private void Help_Click(object sender, EventArgs e)
